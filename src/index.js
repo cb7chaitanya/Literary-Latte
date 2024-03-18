@@ -9,15 +9,15 @@ import Shop from './pages/Shop'
 import Register from './pages/Register'
 import ThankYou from './pages/ThankYou'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import Checkout from './pages/Checkout';
 import { Context } from './Context';
 
-const basename = "/";
 
-const router = createBrowserRouter({basename:basename, routes: [
+
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
@@ -50,7 +50,8 @@ const router = createBrowserRouter({basename:basename, routes: [
     path:"ThankYou",
     element: <ThankYou />
   }
-]});
+]
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
