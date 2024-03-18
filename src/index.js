@@ -15,7 +15,9 @@ import {
 import Checkout from './pages/Checkout';
 import { Context } from './Context';
 
-const router = createBrowserRouter([
+const basename = "/Literary-Latte";
+
+const router = createBrowserRouter({basename:basename, routes: [
   {
     path: "/",
     element: <App />,
@@ -48,7 +50,7 @@ const router = createBrowserRouter([
     path:"ThankYou",
     element: <ThankYou />
   }
-]);
+]});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
