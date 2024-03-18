@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './components/navbar'
+import LandingPage from './components/LandingPage'
+import Infinite from './components/infinite'
+import About from './components/about'
+import Footer from './components/footer'
+import History from './components/History'
+import Menu from './components/Menu'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='overflow-hidden w-full min-h-screen text-brown bg-white'>
+      <Navbar></Navbar>
+      <LandingPage></LandingPage>
+      <Infinite></Infinite>
+      <About></About>
+      <History></History>
+      <Menu></Menu>
+      <Footer></Footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
