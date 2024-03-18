@@ -15,7 +15,7 @@ import {
 import Checkout from './pages/Checkout';
 import { Context } from './Context';
 
-const basename = "/Literary-Latte";
+const basename = "/";
 
 const router = createBrowserRouter({basename:basename, routes: [
   {
