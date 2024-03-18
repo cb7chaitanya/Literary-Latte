@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Literary-Latte/static/css/main.a9fe39e7.css",
-    "main.js": "/Literary-Latte/static/js/main.6682e1ce.js",
-    "static/media/Cafe.png": "/Literary-Latte/static/media/Cafe.0ebe439f67d5c0eaa235.png",
-    "static/media/baker.jpeg": "/Literary-Latte/static/media/baker.7d30f7bfb4c970b8c285.jpeg",
-    "static/media/DMenu.png": "/Literary-Latte/static/media/DMenu.d9f7b0b1c3b091f4ff59.png",
-    "static/media/BMenu.png": "/Literary-Latte/static/media/BMenu.f83b61cb04627287547d.png",
-    "static/media/FMenu.png": "/Literary-Latte/static/media/FMenu.cd357f3849112c1ffd97.png",
-    "static/media/gatsby.png": "/Literary-Latte/static/media/gatsby.91d658d246bf673b1d67.png",
-    "static/media/hp.png": "/Literary-Latte/static/media/hp.a951159c5d692291c826.png",
-    "static/media/narnia.png": "/Literary-Latte/static/media/narnia.de05aed7e552220f680c.png",
-    "static/media/FooterLogo.png": "/Literary-Latte/static/media/FooterLogo.372e947126229e28770e.png",
-    "static/media/literary.png": "/Literary-Latte/static/media/literary.51f73b326e3dfbe5a0ec.png",
-    "index.html": "/Literary-Latte/index.html",
-    "main.a9fe39e7.css.map": "/Literary-Latte/static/css/main.a9fe39e7.css.map",
-    "main.6682e1ce.js.map": "/Literary-Latte/static/js/main.6682e1ce.js.map"
+    "main.css": "/static/css/main.a9fe39e7.css",
+    "main.js": "/static/js/main.839c84d7.js",
+    "static/media/Cafe.png": "/static/media/Cafe.0ebe439f67d5c0eaa235.png",
+    "static/media/baker.jpeg": "/static/media/baker.7d30f7bfb4c970b8c285.jpeg",
+    "static/media/DMenu.png": "/static/media/DMenu.d9f7b0b1c3b091f4ff59.png",
+    "static/media/BMenu.png": "/static/media/BMenu.f83b61cb04627287547d.png",
+    "static/media/FMenu.png": "/static/media/FMenu.cd357f3849112c1ffd97.png",
+    "static/media/gatsby.png": "/static/media/gatsby.91d658d246bf673b1d67.png",
+    "static/media/hp.png": "/static/media/hp.a951159c5d692291c826.png",
+    "static/media/narnia.png": "/static/media/narnia.de05aed7e552220f680c.png",
+    "static/media/FooterLogo.png": "/static/media/FooterLogo.372e947126229e28770e.png",
+    "static/media/literary.png": "/static/media/literary.51f73b326e3dfbe5a0ec.png",
+    "index.html": "/index.html",
+    "main.a9fe39e7.css.map": "/static/css/main.a9fe39e7.css.map",
+    "main.839c84d7.js.map": "/static/js/main.839c84d7.js.map"
   },
   "entrypoints": [
     "static/css/main.a9fe39e7.css",
-    "static/js/main.6682e1ce.js"
+    "static/js/main.839c84d7.js"
   ]
 }
