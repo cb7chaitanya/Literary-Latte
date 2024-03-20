@@ -12,7 +12,7 @@ function VirtLibrary() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.get(`http://openlibrary.org/search.json?q=${searchTerm}`);
+      const response = await axios.get(`https://openlibrary.org/search.json?q=${searchTerm}`);
       setSearchResults(response.data.docs.slice(0,1));
     } catch (error) {
       console.error('Error fetching data:', error);
