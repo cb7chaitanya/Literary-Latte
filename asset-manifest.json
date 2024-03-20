@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Literary-Latte/static/css/main.a9fe39e7.css",
-    "main.js": "/Literary-Latte/static/js/main.cd0cea0c.js",
+    "main.js": "/Literary-Latte/static/js/main.c38b7e84.js",
     "static/media/Cafe.png": "/Literary-Latte/static/media/Cafe.0ebe439f67d5c0eaa235.png",
     "static/media/baker.jpeg": "/Literary-Latte/static/media/baker.7d30f7bfb4c970b8c285.jpeg",
     "static/media/DMenu.png": "/Literary-Latte/static/media/DMenu.d9f7b0b1c3b091f4ff59.png",
@@ -14,10 +14,10 @@
     "static/media/literary.png": "/Literary-Latte/static/media/literary.51f73b326e3dfbe5a0ec.png",
     "index.html": "/Literary-Latte/index.html",
     "main.a9fe39e7.css.map": "/Literary-Latte/static/css/main.a9fe39e7.css.map",
-    "main.cd0cea0c.js.map": "/Literary-Latte/static/js/main.cd0cea0c.js.map"
+    "main.c38b7e84.js.map": "/Literary-Latte/static/js/main.c38b7e84.js.map"
   },
   "entrypoints": [
     "static/css/main.a9fe39e7.css",
-    "static/js/main.cd0cea0c.js"
+    "static/js/main.c38b7e84.js"
   ]
 }
