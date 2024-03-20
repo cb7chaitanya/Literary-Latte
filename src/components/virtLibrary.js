@@ -4,6 +4,8 @@ import axios from 'axios'
 function VirtLibrary() {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
