@@ -11,18 +11,23 @@ function VirtLibrary() {
     setSearchTerm(event.target.value);
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      const response = await axios.get(`https://openlibrary.org/search.json?q=${searchTerm}`);
-      setSearchResults(response.data.docs.slice(0,1));
-    } catch (error) {
-      setError('An error occurred while fetching data.');
-      console.error('Error fetching data:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  const apiKey = 'AIzaSyA67py4_kzOp3l7oQCwL5FUNso6GoTp8no'; 
+
+const handleSubmit = async (event) => {
+  event.preventDefault();
+  setLoading(true);
+    setError(null);
+  try {
+    const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&key=${apiKey}`);
+    setSearchResults(response.data.items.slice(0, 1)); 
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    setError('An error occurred. Please try again later.');
+  }finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <div>
@@ -37,10 +42,10 @@ function VirtLibrary() {
             return(
             <li key={index}>
               <div className='w-60 h-76 bg-beige rounded-r-xl mt-8 translate-x-24 hover:scale-110 duration-500 sm:translate-x-44 md:translate-x-[600px]'>
-                {book.cover_i && <img src={`http://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`} alt="Book cover" className="w-36 h-48" />}
+              {book.volumeInfo.imageLinks && <img src={book.volumeInfo.imageLinks.thumbnail} alt="Book cover" className="w-36 h-48" />}
                 <div className='text-lg font-semibold'>
-                  <p>{book.title_suggest}</p>
-                  <p>{book.author_name && book.author_name.join(', ')}</p>
+                    <p>{book.volumeInfo.title}</p>
+                    <p>{book.volumeInfo.authors && book.volumeInfo.authors.join(', ')}</p>
                 </div>
               </div>
             </li>
