@@ -15,7 +15,10 @@ function VirtLibrary() {
       const response = await axios.get(`https://openlibrary.org/search.json?q=${searchTerm}`);
       setSearchResults(response.data.docs.slice(0,1));
     } catch (error) {
+      setError('An error occurred while fetching data.');
       console.error('Error fetching data:', error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -25,6 +28,8 @@ function VirtLibrary() {
             <input type='text' className='input-control w-full px-4 py-4 my-10 rounded-xl border-brown' placeholder='look through our collection' autoComplete="off" value={searchTerm} onChange={handleChange}></input>
             <button type='submit' className='bg-brown text-white px-4 py-2 rounded-xl translate-x-48 hover:text-beige duration-300 sm:translate-x-64 md:translate-x-[700px] text-sm sm:text-md md:text-lg'>search</button>
         </form>
+        {loading && <div>Loading...</div>}
+        {error && <div>{error}</div>}
         <ul>
           {searchResults.map((book,index)=>{
             return(
