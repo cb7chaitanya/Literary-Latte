@@ -4,15 +4,15 @@ This is a project created with the concept of a book cafe in mind, to expand my 
 
 ## Technologies used
 
-  React: A JavaScript library for building user interfaces.
-  Context API: A React Tool for efficient state management.
-  React Router DOM: A library for declarative routing in React applications.
-  Axios: A promise-based HTTP client for making requests to APIs.
-  Tailwind CSS: A CSS framework for building modern web applications.
-  Framer Motion: A library for creating fluid animations and interactive UIs in React.
-  React Icons: A library of customizable SVG icons for React applications.
-  Flowbite and Flowbite React: A UI framework and React components for responsive web design.
-  React Toastify: A library for displaying toast notifications in React applications.
+### React: A JavaScript library for building user interfaces.
+### Context API: A React Tool for efficient state management.
+### React Router DOM: A library for declarative routing in React applications.
+### Axios: A promise-based HTTP client for making requests to APIs.
+### Tailwind CSS: A CSS framework for building modern web applications.
+### Framer Motion: A library for creating fluid animations and interactive UIs in React.
+### React Icons: A library of customizable SVG icons for React applications.
+### Flowbite and Flowbite React: A UI framework and React components for responsive web design.
+### React Toastify: A library for displaying toast notifications in React applications.
 
 ## Features
 
